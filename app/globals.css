@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: var(--font-inter);
+  --font-outfit: var(--font-outfit);
+  --font-serif: var(--font-serif);
+  --color-jgu-gold: rgb(212, 175, 55);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f8f6f4;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #800000;
+    border: 3px solid #f8f6f4;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5d0000;
+  }
+}
